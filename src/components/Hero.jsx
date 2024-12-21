@@ -4,20 +4,31 @@ import coins from '../assets/coins.png';  // Path to your coins image
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-between w-full p-6 md:p-12 mt-9">
-      {/* Leftmost Div with Text */}
-   
-      <div className="max-w-3xl z-10 pl-8 -mt-9">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl space-y-4 font-jersey10  leading-[77]">
+    <div className="w-full flex justify-center items-center p-6 mt-7 md:-mt-9">
+      {/* Outer Wrapper Div for Flex Layout */}
+      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl relative">
+
+        {/* Centered Coins Image in the Background */}
+        <div className="absolute inset-0 flex justify-center items-center z-0">
+          <img 
+            src={coins} 
+            alt="Coins" 
+            className="max-w-full h-auto object-contain" 
+          />
+        </div>
+
+        {/* Leftmost Div with Text */}
+        <div className="max-w-3xl z-10 pl-8 -mt-9 text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl space-y-4 font-jersey10">
             <div className="flex flex-col">
-              <span className='pb-4'>
+              <span className="pb-4">
                 <span className="text-white">Your </span>
                 <span className="text-[#E2D223]">Superhero </span>
                 <span className="text-[#E2D223]">Dog</span>
               </span>
-            
-              <span className='pb-4'>
-              <span className="text-white">That Will </span>
+
+              <span className="pb-4">
+                <span className="text-white">That Will </span>
                 <span className="text-[#E2D223]">Protect Your </span>
               </span>
               <span className="text-[#E2D223]">Crypto!</span>
@@ -25,16 +36,16 @@ export default function Hero() {
           </h1>
         </div>
 
-
-      {/* Middle Div with Coins Image */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-28 lg:h-[700px]">
-  <img src={coins} alt="Coins" className=" " />
+        {/* Rightmost Div with Logo Image */}
+        <div className="overflow-hidden flex justify-end items-center mt-8 md:mt-0 sm:h-[300px] md:h-[400px] lg:h-[480px] flex-1 z-10">
+  <img 
+    src={logo} 
+    alt="Logo" 
+    className="max-w-full h-full object-contain"
+  />
 </div>
-      {/* Rightmost Div with Logo Image */}
-      <div className="overflow-hidden -mt-20  flex justify-center sm:h-[300px] md:h-[400px]  lg:h-[500px] lg:-mr-12 ">
-        <img src={logo} alt="Logo" className=" " />
+
       </div>
     </div>
   );
 };
-
