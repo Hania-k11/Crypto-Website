@@ -32,8 +32,8 @@ export default function AnimatedBackground() {
       className="flex justify-center items-center w-full h-auto overflow-hidden"
     >
       <div
-        className={`relative w-full px-4 md:px-8 bg-[#E2D223] rounded-t-3xl transition-transform duration-700 ${
-          animate ? 'translate-y-0' : 'translate-y-20'
+        className={`relative w-full px-4 md:px-8 bg-[#E2D223] rounded-t-3xl transition-all duration-1000 ease-out ${
+          animate ? 'animate-slideUp opacity-100' : 'opacity-0'
         }`}
       >
         {/* Title */}
@@ -64,14 +64,13 @@ export default function AnimatedBackground() {
         </div>
 
         {/* Background Image */}
-        <div className=" absolute inset-y-0 right-0 w-full md:w-1/2 h-auto opacity-30 z-10 flex justify-end items-center">
-  <img
-    src={bgImage}
-    alt="Background"
-    className="w-full h-full object-contain rounded-tr-3xl"  // Increased size
-  />
-</div>
-
+        <div className="absolute inset-y-0 right-0 w-full md:w-1/2 h-auto opacity-30 z-10 flex justify-end items-center">
+          <img
+            src={bgImage}
+            alt="Background"
+            className="w-full h-full object-contain rounded-tr-3xl" // Increased size
+          />
+        </div>
       </div>
     </div>
   );

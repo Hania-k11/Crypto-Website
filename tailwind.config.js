@@ -13,7 +13,7 @@ export default {
         },
       },
       animation: {
-        'slide-up': 'slideUp 1.5s ease-out forwards',
+        'slideUp': 'slideUp 1.5s ease-out forwards',
       },
       fontFamily: {
         jockey: ['JockeyOne', 'sans-serif', ],

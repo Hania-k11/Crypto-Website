@@ -2,6 +2,7 @@ import bg from './assets/bg.png';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AnimatedBackground from './components/AnimatedBackground';
+import Hand from './components/Hand';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Navbar/>
         <Hero/>
         <AnimatedBackground/>
+        <Hand/>
       </div>
     </div>
   );
