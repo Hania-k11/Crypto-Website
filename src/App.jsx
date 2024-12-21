@@ -1,11 +1,12 @@
 import bg from './assets/bg.png';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AnimatedBackground from './components/AnimatedBackground';
 
 export default function App() {
   return (
     <div
-      className="relative w-full bg-gray-200 bg-no-repeat bg-top"
+      className="relative w-full  bg-no-repeat bg-top"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: 'cover', // Ensures the image covers the full container
@@ -18,6 +19,7 @@ export default function App() {
         {/* Your components here */}
         <Navbar/>
         <Hero/>
+        <AnimatedBackground/>
       </div>
     </div>
   );
