@@ -8,6 +8,7 @@ import Comics from './components/Comics';
 import  BigReleaseSection from './components/BigReleaseSection';
 import Mask from './components/Mask';
 import Merch from './components/Merch';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <BigReleaseSection/>
         <Mask/>
         <Merch/>
+        <Footer/>
       </div>
     </div>
   );
