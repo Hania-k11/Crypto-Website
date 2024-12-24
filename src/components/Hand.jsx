@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import hand from '../assets/hand.png';
 
 export default function Hand() {
+  const [isVisible, setIsVisible] = useState(false);
+  const handRef = useRef(null); // Ref for the component
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+          setIsVisible(true); // Trigger animation when 10% of the component is visible
+        }
+      },
+      {
+        threshold: 0.1, // 10% of the component in the viewport
+      }
+    );
+
+    if (handRef.current) {
+      observer.observe(handRef.current); // Start observing the component
+    }
+
+    return () => {
+      if (handRef.current) {
+        observer.unobserve(handRef.current); // Clean up on unmount
+      }
+    };
+  }, []);
+
   return (
-    <div className="flex justify-between">
-      <div className="justify-end -ml-18 w-1/2">
+    <div className="flex justify-between" ref={handRef}>
+      <div
+        className={`justify-end -ml-18 w-1/2 transition-transform duration-1000 ease-out ${
+          isVisible ? 'translate-y-0 opacity-100' : '-translate-y-48 opacity-0'
+        }`}
+      >
         <img
           src={hand}
           alt="hand"
