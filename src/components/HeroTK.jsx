@@ -1,46 +1,43 @@
 import React from 'react';
-import logo from '../assets/logo.png';  // Path to your logo image
-import pig from '../assets/pig.png'; 
-import cube from '../assets/cube.png';  // Path to your coins image
+import logo from '../assets/logo.png'; // Path to your logo image
+import pig from '../assets/pig.png';
+import cube from '../assets/cube.png'; // Path to your coins image
 
 export default function HeroTK() {
   return (
-    <div className="w-full flex justify-center items-center p-6 mt-7 md:-mt-9">
+    <div className="w-full flex justify-center items-center px-4 py-6 mt-7 md:mt-0">
       {/* Outer Wrapper Div for Flex Layout */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl relative">
 
-        {/* Centered Coins Image in the Background */}
+        {/* Centered Background Image */}
         <div className="absolute inset-0 flex justify-center items-center z-0">
-          <img 
-            src={pig} 
-            alt="pig" 
-            className="w-96 h-auto object-contain opacity-40" 
+          <img
+            src={pig}
+            alt="pig"
+            className="w-64 sm:w-80 md:w-96 lg:w-[400px] xl:w-[400px] h-auto object-contain   opacity-40 -mt-16"
           />
         </div>
 
-        {/* Leftmost Div with Text */}
-        <div className="max-w-3xl z-10 pl-8 -mt-9 text-center md:text-left">
-  <h1 className="text-4xl md:text-5xl lg:text-7xl space-y-4 font-jersey10">
-    <div className="flex flex-col">
-      <span className=" text-[#E2D223]">Tokenomics</span>
-    </div>
-  </h1>
-  <p className="text-white text-3xl mt-4 font-jersey10">
-    EnKrypto is a unique cryptocurrency designed to help protect the investor and give them great insight and help through the crazy schemers and scammers trying to steal your crypto!
-  </p>
-</div>
+        {/* Left Section with Text */}
+        <div className="relative z-10 max-w-3xl px-4 md:px-8 text-center md:text-left -mt-11">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-8xl font-jersey10">
+            <span className="text-[#E2D223]">Tokenomics</span>
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-4 font-jersey10">
+            EnKrypto is a unique cryptocurrency designed to help protect the investor and give them great insight and help through the crazy schemers and scammers trying to steal your crypto!
+          </p>
+        </div>
 
-
-        {/* Rightmost Div with Logo Image */}
-        <div className="overflow-hidden flex justify-end items-center mt-8 md:mt-0 sm:h-[300px] md:h-[400px] lg:h-[480px] flex-1 z-10">
-  <img 
-    src={cube} 
-    alt="cube" 
-    className="max-w-full h-full object-contain "
-  />
-</div>
+        {/* Right Section with Cube Image */}
+        <div className="relative z-10 flex justify-end items-center mt-8 md:mt-0 sm:h-[200px] md:h-[300px] lg:h-[400px] xl:h-[480px] flex-1 md:-mt-12">
+          <img
+            src={cube}
+            alt="cube"
+            className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[480px] h-auto object-contain"
+          />
+        </div>
 
       </div>
     </div>
   );
-};
+}
