@@ -9,9 +9,13 @@ import  BigReleaseSection from './components/BigReleaseSection';
 import Mask from './components/Mask';
 import Merch from './components/Merch';
 import Footer from './components/Footer';
+import Home from './components/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Tokenomics from './components/Tokenomics';
 
 export default function App() {
   return (
+    <Router>
     <div
       className="relative w-full  bg-no-repeat bg-top"
       style={{
@@ -24,17 +28,12 @@ export default function App() {
       {/* Components on top of the background */}
       <div className="relative flex flex-col items-center justify-center py-20 text-white">
         {/* Your components here */}
-        <Navbar/>
-        <Hero/>
-        <AnimatedBackground/>
-        <Hand/>
-        <EnkryptoAbout/>
-        <Comics/>
-        <BigReleaseSection/>
-        <Mask/>
-        <Merch/>
-        <Footer/>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tokenomics" element={<Tokenomics />} />
+        </Routes>
       </div>
     </div>
+    </Router>
   );
 }

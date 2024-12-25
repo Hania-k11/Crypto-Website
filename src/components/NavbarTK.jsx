@@ -3,7 +3,7 @@ import { Search } from 'lucide-react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export default function NavbarTK() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,8 +25,20 @@ export default function Navbar() {
         <Link to="/" className="text-lg py-16 px-3 font-jockey hover:bg-[#0F0775] transition-colors duration-200">
   HOME
 </Link>
-<Link to="/tokenomics" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
-  TOKENNOMICS
+<Link to="/aboutus" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
+  ABOUT US
+</Link>
+<Link to="/merch" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
+  MERCH
+</Link>
+<Link to="/nft" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
+  NFT
+</Link>
+<Link to="/media" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
+  MEDIA
+</Link>
+<Link to="/game" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
+  GAME
 </Link>
         </div>
 
