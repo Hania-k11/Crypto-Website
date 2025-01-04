@@ -60,7 +60,7 @@ export default function Hand() {
 
         <div className="flex justify-end pr-16 mt-4">
           <button
-            className="bg-[#E2D223] w-56 text-black font-jersey10 text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition duration-300"
+            className="bg-[#E2D223] w-44 lg:w-56 text-black font-jersey10 2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition duration-300"
           >
             ABOUT US
           </button>
