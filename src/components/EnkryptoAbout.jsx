@@ -58,6 +58,14 @@ export default function EnkryptoAbout() {
               >
                 View Enkrypto on Solscan 👁
               </a>
+              <a
+                href="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+                 target="_blank"
+  rel="noopener noreferrer"
+                className=" font-jersey10 block w-full bg-[#E2D223] hover:bg-yellow-500 text-[#880F11] text-3xl font-semibold py-3 px-6 rounded-full text-center transition-colors duration-200"
+              >
+                RAYDIUM
+              </a>
             </div>
           </div>
         </div>

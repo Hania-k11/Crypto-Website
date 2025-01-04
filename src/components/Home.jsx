@@ -20,8 +20,9 @@ export default function Home() {
         <AnimatedBackground/>
         <Hand/>
         <EnkryptoAbout/>
-        <Comics/>
         <StepsToBuy/>
+        <Comics/>
+       
         <BigReleaseSection/>
         <Mask/>
         <Merch/>

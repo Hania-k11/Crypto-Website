@@ -33,7 +33,7 @@ export default function StepsToBuy() {
   ));
 
   return (
-    <div className="w-full mb-32">
+    <div className="w-full ">
       <h1 className="text-center lg:text-6xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
         Steps To Buy
       </h1>
