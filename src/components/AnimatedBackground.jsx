@@ -32,7 +32,7 @@ export default function AnimatedBackground() {
       className="flex justify-center items-center w-full h-auto overflow-hidden"
     >
       <div
-        className={`relative w-full px-4 md:px-8 bg-[#E2D223] rounded-t-3xl transition-all duration-1000 ease-out ${
+        className={`z-20 relative w-full px-4 md:px-8  bg-[#E2D223] rounded-t-3xl transition-all duration-1000 ease-out ${
           animate ? 'animate-slideUp opacity-100' : 'opacity-0'
         }`}
       >
@@ -48,7 +48,7 @@ export default function AnimatedBackground() {
             <img
               src={gold}
               alt="Gold"
-              className="w-3/4 md:w-full h-auto object-contain"
+              className="w-3/4 md:w-full h-auto object-contain animate-pulse"
             />
           </div>
 

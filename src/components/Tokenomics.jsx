@@ -5,6 +5,9 @@ import NavbarTK from "./NavbarTK";// Adjust the path to Navbar based on your fol
 import HeroTK from "./HeroTK";
 import WhatsTK from "./WhatsTK";
 import DashboardTK from "./DashboardTK";
+import RoadmapTK from "./RoadmapTK";
+import AvailableTK from "./AvailableTK";
+import Footer from "./Footer";
 
 export default function Tokenomics() {
   return (
@@ -14,6 +17,9 @@ export default function Tokenomics() {
       <HeroTK/>
       <WhatsTK/>
       <DashboardTK/>
+      <RoadmapTK/>
+      <AvailableTK/>
+      <Footer/>
       
       {/* Tokenomics Content */}
       

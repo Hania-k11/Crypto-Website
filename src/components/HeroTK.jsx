@@ -29,13 +29,14 @@ export default function HeroTK() {
         </div>
 
         {/* Right Section with Cube Image */}
-        <div className="relative z-10 flex justify-end items-center mt-8 md:mt-0 sm:h-[200px] md:h-[300px] lg:h-[400px] xl:h-[480px] flex-1 md:-mt-12">
-          <img
-            src={cube}
-            alt="cube"
-            className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[480px] h-auto object-contain"
-          />
-        </div>
+        <div className="relative z-10 flex justify-end items-center mt-8 md:mt-0 sm:h-[200px] md:h-[300px] lg:h-[400px] xl:h-[480px] flex-1 md:-mt-12 group">
+  <img
+    src={cube}
+    alt="cube"
+    className="animate-pulse w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] xl:max-w-[480px] h-auto object-contain group-hover:animate-shake"
+  />
+</div>
+
 
       </div>
     </div>

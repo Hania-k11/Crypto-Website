@@ -9,6 +9,8 @@ import BigReleaseSection from "./BigReleaseSection";
 import Mask from "./Mask";
 import Merch from "./Merch";
 import Footer from "./Footer";
+import StepsToBuy from "./StepsToBuy";
+
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
         <Hand/>
         <EnkryptoAbout/>
         <Comics/>
+        <StepsToBuy/>
         <BigReleaseSection/>
         <Mask/>
         <Merch/>

@@ -35,29 +35,12 @@ export default function Footer() {
                 Home
               </a>
               <a
-                href="/about"
+                href="/tokenomics"
                 className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
               >
-                About Us
+                Tokenomics
               </a>
-              <a
-                href="/merch"
-                className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
-              >
-                Merch
-              </a>
-              <a
-                href="/nft"
-                className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
-              >
-                NFT
-              </a>
-              <a
-                href="/media"
-                className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
-              >
-                Media
-              </a>
+           
             </nav>
           </div>
 
@@ -75,7 +58,7 @@ export default function Footer() {
             <img
               src={pig}
               alt="Coins Illustration"
-              className="mt-4 w-32 md:w-48 lg:w-64 h-auto mx-auto md:mx-0"
+              className="mt-4 w-32 md:w-48 lg:w-64 h-auto mx-auto md:mx-0 animate-pulse"
             />
           </div>
         </div>

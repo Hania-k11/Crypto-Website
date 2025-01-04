@@ -5,7 +5,7 @@ export default function WhatsTK() {
   return (
     <>
       {/* Heading */}
-      <div className="flex justify-center mt-12 font-jersey10 text-[#E2D223] text-4xl md:text-5xl lg:text-7xl">
+      <div id="about-us" className="flex justify-center mt-12 font-jersey10 text-[#E2D223] text-4xl md:text-5xl lg:text-7xl">
         What's Tokenomics
       </div>
 
@@ -16,12 +16,12 @@ export default function WhatsTK() {
           <img 
             src={light} 
             alt="light" 
-            className="w-64 sm:w-80 md:w-96 lg:w-[900px] h-auto object-contain" 
+            className="w-64 sm:w-80 md:w-96 lg:w-[900px] h-auto object-contain hover:animate-shake" 
           />
         </div>
 
         {/* Text Section */}
-        <div className="relative z-10 max-w-3xl w-full text-center  lg:mt-20 lg:ml-12">
+        <div className="lg:relative z-10 max-w-3xl w-full text-center   lg:mt-20 lg:ml-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-jersey10">
             <span className="text-[#E2D223]">Tokenomics</span>
           </h1>

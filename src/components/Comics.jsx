@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Comics() {
   return (
-    <div className="overflow-hidden px-16 flex items-center justify-end max-w-full w-full -mx-10">
+    <div id="comics" className="overflow-hidden px-16 flex items-center justify-end max-w-full w-full -mx-10">
       <h1
         className="overflow-hidden font-jersey10 text-transparent"
         style={{

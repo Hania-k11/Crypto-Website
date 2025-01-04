@@ -29,7 +29,7 @@ export default function Hand() {
   }, []);
 
   return (
-    <div className="flex justify-between" ref={handRef}>
+    <div id="about-us" className="flex justify-between" ref={handRef}>
       <div
         className={`justify-end -ml-18 w-1/2 transition-transform duration-1000 ease-out ${
           isVisible ? 'translate-y-0 opacity-100' : '-translate-y-48 opacity-0'
@@ -38,7 +38,7 @@ export default function Hand() {
         <img
           src={hand}
           alt="hand"
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain hover:animate-bounce z-0"
         />
       </div>
 
