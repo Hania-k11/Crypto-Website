@@ -3,27 +3,27 @@ import hand from '../assets/hand.png';
 
 export default function Hand() {
   const [isVisible, setIsVisible] = useState(false);
-  const handRef = useRef(null); // Ref for the component
+  const handRef = useRef(null); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
-          setIsVisible(true); // Trigger animation when 10% of the component is visible
+          setIsVisible(true); 
         }
       },
       {
-        threshold: 0.1, // 10% of the component in the viewport
+        threshold: 0.1, 
       }
     );
 
     if (handRef.current) {
-      observer.observe(handRef.current); // Start observing the component
+      observer.observe(handRef.current); 
     }
 
     return () => {
       if (handRef.current) {
-        observer.unobserve(handRef.current); // Clean up on unmount
+        observer.unobserve(handRef.current); 
       }
     };
   }, []);

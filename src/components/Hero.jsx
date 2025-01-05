@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/logo.png';  // Path to your logo image
-import coins from '../assets/coins.png';  // Path to your coins image
+import logo from '../assets/logo.png';  
+import coins from '../assets/coins.png';  
 
 export default function Hero() {
   return (

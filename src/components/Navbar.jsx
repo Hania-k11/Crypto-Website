@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Search } from 'lucide-react';
-import { Link as ScrollLink } from 'react-scroll'; // Importing react-scroll
+import { Link as ScrollLink } from 'react-scroll'; 
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 

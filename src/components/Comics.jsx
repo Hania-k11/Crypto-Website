@@ -6,10 +6,10 @@ export default function Comics() {
       <h1
         className="overflow-hidden font-jersey10 text-transparent"
         style={{
-          fontSize: "6rem", // Default font size for small screens
-          lineHeight: "1", // Ensure no vertical overflow
-          WebkitTextStroke: "2px #E2D223", // Yellow outline
-          WebkitTextFillColor: "transparent", // Transparent text color
+          fontSize: "6rem", 
+          lineHeight: "1", 
+          WebkitTextStroke: "2px #E2D223", 
+          WebkitTextFillColor: "transparent", 
         }}
       >
         <span className="block md:hidden" style={{ fontSize: "6rem" }}>

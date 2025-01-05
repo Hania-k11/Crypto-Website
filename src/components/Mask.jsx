@@ -1,6 +1,5 @@
 import * as React from "react";
-import MaskImage from "../assets/Mask.png"; // Replace with the actual path to your image
-
+import MaskImage from "../assets/Mask.png"; 
 export default function Mask() {
   return (
     <div className="w-full mt-24 px-5 sm:px-10 md:px-20 min-h-screen"> {/* Ensures the container can grow with content */}

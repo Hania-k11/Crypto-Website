@@ -20,8 +20,8 @@ export default function EnkryptoAbout() {
           <div
             className="rounded-3xl p-8 border-[#E2D223] flex flex-col items-center text-center"
             style={{
-              backgroundColor: 'rgba(17, 10, 47, 0.6)', // Semi-transparent background
-              border: '5px solid rgba(226, 210, 35, 0.8)', // Increased border width
+              backgroundColor: 'rgba(17, 10, 47, 0.6)', 
+              border: '5px solid rgba(226, 210, 35, 0.8)', 
             }}
           >
             <div className="flex items-center gap-4 mb-6 justify-center">

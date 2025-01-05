@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Path to your logo image
+import logo from '../assets/logo.png'; 
 import pig from '../assets/pig.png';
-import cube from '../assets/cube.png'; // Path to your coins image
+import cube from '../assets/cube.png'; 
 
 export default function HeroTK() {
   return (
