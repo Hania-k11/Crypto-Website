@@ -20,14 +20,14 @@ export default function App() {
       className="relative w-full  bg-no-repeat bg-top"
       style={{
         backgroundImage: `url(${bg})`,
-        backgroundSize: 'cover', // Ensures the image covers the full container
-        backgroundRepeat: 'repeat', // Ensures the image repeats
-        minHeight: '100vh', // Ensures at least full viewport height
+        backgroundSize: 'cover', 
+        backgroundRepeat: 'repeat', 
+        minHeight: '100vh', 
       }}
     >
-      {/* Components on top of the background */}
+     
       <div className="relative flex flex-col items-center justify-center py-20 text-white">
-        {/* Your components here */}
+     
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tokenomics" element={<Tokenomics />} />
