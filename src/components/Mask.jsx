@@ -1,8 +1,31 @@
 import * as React from "react";
 import MaskImage from "../assets/Mask.png"; 
 export default function Mask() {
+  const [isVisible, setIsVisible] = React.useState(false);
+  const sectionRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Start animation
+          observer.disconnect(); // Stop observing after animation starts
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the section is visible
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const text = "Merch"; // The text to animate
+
   return (
-    <div className="w-full mt-24 px-5 sm:px-10 md:px-20 min-h-screen"> {/* Ensures the container can grow with content */}
+    <div className="w-full mt-24 px-5 sm:px-10 md:px-20 min-h-[15rem]"> {/* Ensures the container can grow with content */}
       {/* Outer Div for Padding */}
       <div className="relative rounded-2xl w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
         {/* Background Image */}
@@ -24,17 +47,32 @@ export default function Mask() {
       </div>
       
       {/* Merch Title */}
-      <div className="overflow-hidden px-4 sm:px-8 md:px-16 flex items-center justify-center md:justify-start max-w-full w-full mt-1"> 
-        <h1
-          className="flex justify-center md:justify-start text-transparent bg-clip-text font-bold text-[8rem] sm:text-[10rem] md:text-[18rem] lg:text-[20rem] font-jersey10"
-          style={{
-            WebkitTextStroke: "2px #E2D223", // Yellow outline
-            color: "transparent", // Transparent text fill
-          }}
-        >
-          Merch
-        </h1>
-      </div>
+      <div
+      ref={sectionRef}
+      className="typing-container flex items-center justify-center md:justify-start px-4 sm:px-8 md:px-16 w-full mt-1"
+    >
+      <h1
+        className="typing-text font-bold flex justify-center md:justify-start"
+        style={{
+          WebkitTextStroke: "2px #E2D223", // Yellow outline
+          color: "transparent", // Transparent text fill
+        }}
+      >
+        {text.split("").map((letter, index) => (
+          <span
+            key={index}
+
+            className={`letter ${isVisible ? "visible" : ""}`}
+            style={{
+              animationDelay: `${index * 0.5}s`,
+              fontSize:"16rem"
+            }}
+          >
+            {letter}
+          </span>
+        ))}
+      </h1>
+    </div>
     </div>
   );
 }

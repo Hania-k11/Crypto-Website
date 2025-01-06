@@ -26,7 +26,7 @@ export default function BigReleaseSection() {
             loading="lazy"
             src={comicBook}
             alt="Comic Book"
-            className="object-contain grow w-full aspect-[0.84] max-md:max-w-full animate-pulse hover:animate-shake"
+            className="object-contain grow w-[80rem] aspect-[0.84] max-md:max-w-full animate-pulse hover:animate-shake"
           />
         </div>
       </div>

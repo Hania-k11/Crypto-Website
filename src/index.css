@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Fonts */
 @font-face {
   font-family: 'JockeyOne';
   src: url('./fonts/JockeyOne-Regular.ttf') format('truetype');
@@ -16,3 +17,36 @@
   font-style: normal;
 }
 
+/* Typing Container */
+.typing-container {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Typing Letters */
+.letter {
+  display: inline-block;
+  opacity: 0; /* Start invisible */
+  font-size: "4rem";
+  transform: translateY(10px); /* Start slightly below */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+
+.letter.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Final position */
+  animation: fadeInUp 2.5s ease-out forwards; /* Trigger animation */
+  font-family: "Jersey10", sans-serif; /* Maintain font styling */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); /* Start below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}

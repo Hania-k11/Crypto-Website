@@ -16,9 +16,8 @@ export default function Footer() {
               className="w-32 h-auto mx-auto md:mx-0 lg:w-48"
             />
             <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto md:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              sit amet sagittis risus. Sed nec orci consequat massa vestibulum
-              semper. Vestibulum blandit ultrices pharetra.
+              Your superhero dog on Solana, battling scams and protecting your crypto with hope, humor, and cutting-edge tech. Together, let’s make the crypto world safer and brighter! 🐾✨
+
             </p>
           </div>
 

@@ -6,7 +6,7 @@ export default function Merch() {
   return (
     <>
       {/* First Section */}
-      <div id="merch" className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-screen">
+      <div id="merch" className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[50vh]">
         {/* Left Section: Text and Buttons */}
         <div className="text-white p-6 flex lg:mt-40 flex-col items-center md:items-start w-full md:w-[40rem] space-y-4 mt-10 md:mt-0">
           <div className="text-3xl md:text-4xl font-bold text-center md:text-left">
@@ -27,7 +27,7 @@ export default function Merch() {
         {/* Right Section: Image */}
         <div className="w-[20rem] md:w-[38rem] mt-4 md:mt-0">
           <img
-            src={merchdog}
+            src={merchsuper}
             alt="Merchandise"
             className="w-full h-auto object-cover hover:animate-shake"
           />
@@ -35,7 +35,7 @@ export default function Merch() {
       </div>
 
       {/* Second Section */}
-      <div className="-mt-20 flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-screen">
+      <div className="-mt-20 flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[50vh] " style={{ paddingBottom: "150px" }}> 
         {/* Left Section: Image */}
         <div className="hidden md:block md:w-[38rem] mt-4 md:mt-0">
           <img

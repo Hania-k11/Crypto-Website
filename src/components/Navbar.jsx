@@ -24,7 +24,7 @@ export default function Navbar() {
   HOME
 </Link>
 <Link to="/tokenomics" className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200">
-  TOKENNOMICS
+  TOKENOMICS
 </Link>
           <ScrollLink
             to="about-us"

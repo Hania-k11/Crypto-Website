@@ -20,8 +20,8 @@ export default function StepsToBuy() {
   const stepsData = [
     { number: 1, title: 'Download Phontom ', content: 'Download and install the Phantom Wallet either from the app store on your phone or as a browser extension for desktop.' },
     { number: 2, title: 'Buy some Solana', content: 'Purchase $SOL from an exchange or bridge $SOL and send it to your Phantom wallet' },
-    { number: 3, title: 'Buy $MAD', content: 'Go to Decentralized Exchanges (DEXs) : Raydium, and paste the $MAD contract address listed on this website to swap your SOL for MA' },
-    { number: 4, title: 'Add $MAD to Your Wallet', content: 'Add $MAD contract address to your Phantom Wallet for your $MAD tokens to show. Lets get MAD!' },
+    { number: 3, title: 'Buy $KRYPT', content: 'Go to Decentralized Exchanges (DEXs) : Raydium, and paste the $KRYPT contract address listed on this website to swap your SOL for MA' },
+    { number: 4, title: 'Add $KRYPT to Your Wallet', content: 'Add $KRYPT contract address to your Phantom Wallet for your $KRYPT tokens to show. Lets get SUPER!' },
   ];
 
   // Add an arrow after each box
@@ -33,8 +33,8 @@ export default function StepsToBuy() {
   ));
 
   return (
-    <div className="w-full ">
-      <h1 className="text-center lg:text-6xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
+    <div className="w-full min-h-[50vh] ">
+      <h1 className="text-center lg:text-8xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
         Steps To Buy
       </h1>
       <div className="flex items-center justify-center w-full overflow-hidden">
