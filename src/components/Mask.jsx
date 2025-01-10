@@ -25,7 +25,7 @@ export default function Mask() {
   const text = "Merch"; // The text to animate
 
   return (
-    <div className="w-full mt-24 px-5 sm:px-10 md:px-20 min-h-[15rem]"> {/* Ensures the container can grow with content */}
+    <div className="w-full mt-24 px-5 sm:px-10 md:px-20 min-h-[rem]"> {/* Ensures the container can grow with content */}
       {/* Outer Div for Padding */}
       <div className="relative rounded-2xl w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
         {/* Background Image */}

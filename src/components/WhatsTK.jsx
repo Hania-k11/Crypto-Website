@@ -10,14 +10,14 @@ export default function WhatsTK() {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mt-8 lg:mt-12 max-w-screen-xl mx-auto min-h-[70vh]">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mt-8 lg:mt-12 max-w-screen-xl mx-auto min-h-[40rem]">
         {/* Image Section */}
-        <div className="flex justify-center lg:justify-start w-full lg:w-full lg:-mt-11">
-          <img 
-            src={light} 
-            alt="light" 
-            className="w-64 sm:w-80 md:w-96 lg:w-[900px] h-auto object-contain hover:animate-shake" 
-          />
+        <div className="flex justify-center lg:justify-start w-full lg:w-full lg:-mt-11 group">
+            <img
+              src={light}
+              alt="light"
+              className="animate-pulse w-full max-w-[150px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[00px] xl:max-w-[980px] h-auto object-contain group-hover:animate-shake"
+            />
         </div>
 
         {/* Text Section */}

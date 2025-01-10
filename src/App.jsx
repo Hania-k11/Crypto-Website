@@ -1,17 +1,9 @@
 import bg from './assets/bg.png';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import AnimatedBackground from './components/AnimatedBackground';
-import Hand from './components/Hand';
-import EnkryptoAbout from './components/EnkryptoAbout';
-import Comics from './components/Comics';
-import  BigReleaseSection from './components/BigReleaseSection';
-import Mask from './components/Mask';
-import Merch from './components/Merch';
-import Footer from './components/Footer';
+
 import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Tokenomics from './components/Tokenomics';
+import EnkryptoAboutPage from './components/Aboutus';
 
 export default function App() {
   return (
@@ -31,6 +23,7 @@ export default function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tokenomics" element={<Tokenomics />} />
+        <Route path="/aboutus" element={<EnkryptoAboutPage />} />
         </Routes>
       </div>
     </div>

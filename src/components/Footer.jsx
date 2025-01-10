@@ -29,13 +29,14 @@ export default function Footer() {
             <nav className="space-y-2">
               <a
                 href="/"
-                className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
+                className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-80"
               >
                 Home
               </a>
+              <br/>
               <a
                 href="/tokenomics"
-                className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
+                className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-8"
               >
                 Tokenomics
               </a>

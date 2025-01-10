@@ -11,9 +11,10 @@ import Footer from "./Footer";
 
 export default function Tokenomics() {
   return (
+    <>
+      <NavbarTK />
     <div>
      
-      <NavbarTK />
       <HeroTK/>
       <WhatsTK/>
       <DashboardTK/>
@@ -23,5 +24,6 @@ export default function Tokenomics() {
       
       
     </div>
+    </>
   );
 }

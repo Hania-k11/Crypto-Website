@@ -60,7 +60,8 @@ export default function Hand() {
 
         <div className="flex justify-end pr-16 mt-4">
           <button
-            className="bg-[#E2D223] w-44 lg:w-56 text-black font-jersey10 2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-yellow-500 transition duration-300"
+            onClick={() => { window.location.href = '/aboutus'; }}
+            className="bg-[#E2D223] w-44 lg:w-56 text-black font-jersey10 2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-red-900 text-[#880F11] hover:text-[#E2D223] transition duration-300"
           >
             ABOUT US
           </button>

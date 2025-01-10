@@ -2,7 +2,7 @@ import donut from '../assets/donut.png';
 
 export default function DashboardTK() {
   return (
-    <div id="tokenomics" className="min-h-screen flex flex-col items-center justify-center">
+    <div id="tokenomics" className="min-h-[10rem] flex flex-col items-center justify-center">
       <div className="w-full max-w-6xl px-4 sm:px-8 lg:px-16">
         {/* Heading */}
         <h1 className="text-[#FFE135] lg:mb-20 text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center mb-8 font-jersey10">

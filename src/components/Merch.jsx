@@ -6,7 +6,7 @@ export default function Merch() {
   return (
     <>
       {/* First Section */}
-      <div id="merch" className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[50vh]">
+      <div id="merch" className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[70vh]">
         {/* Left Section: Text and Buttons */}
         <div className="text-white p-6 flex lg:mt-40 flex-col items-center md:items-start w-full md:w-[40rem] space-y-4 mt-10 md:mt-0">
           <div className="text-3xl md:text-4xl font-bold text-center md:text-left">
@@ -15,7 +15,7 @@ export default function Merch() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-[#FFE135] font-jersey10 rounded-lg text-3xl md:text-4xl text-[#02001E] px-6 py-2 font-bold hover:bg-[#FFE135]/90 transition-colors w-full md:w-auto">
+            <button className="bg-[#FFE135] font-jersey10 rounded-lg text-3xl md:text-4xl text-[#02001E] px-6 py-2 font-bold hover:bg-red-900 hover:text-[#E2D223] transition-colors w-full md:w-auto">
               GET THE SHIRT
             </button>
             <button className="border-2 font-jersey10 text-3xl md:text-4xl rounded-lg border-[#FFE135] text-[#FFE135] px-6 py-2 font-bold hover:bg-[#FFE135]/10 transition-colors w-full md:w-auto">
@@ -35,7 +35,7 @@ export default function Merch() {
       </div>
 
       {/* Second Section */}
-      <div className="-mt-20 flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[50vh] " style={{ paddingBottom: "150px" }}> 
+      <div className="-mt-20 flex flex-col md:flex-row justify-center items-center md:items-start p-4 space-y-8 md:space-y-0 min-h-[50vh]" style={{ paddingBottom: "200px" }}> 
         {/* Left Section: Image */}
         <div className="hidden md:block md:w-[38rem] mt-4 md:mt-0">
           <img
@@ -53,7 +53,7 @@ export default function Merch() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-[#FFE135] rounded-lg font-jersey10 text-3xl md:text-4xl text-[#02001E] px-6 py-2 font-bold hover:bg-[#FFE135]/90 transition-colors w-full md:w-auto">
+            <button className="bg-[#FFE135] rounded-lg font-jersey10 text-3xl md:text-4xl text-[#02001E] px-6 py-2 font-bold hover:bg-red-900 hover:text-[#E2D223] transition-colors w-full md:w-auto">
               GET THE SHIRT
             </button>
             <button className="border-2 font-jersey10 text-3xl md:text-4xl rounded-lg border-[#FFE135] text-[#FFE135] px-6 py-2 font-bold hover:bg-[#FFE135]/10 transition-colors w-full md:w-auto">
