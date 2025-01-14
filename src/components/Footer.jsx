@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import pig from "../assets/pig.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -27,19 +28,19 @@ export default function Footer() {
               Menu
             </h3>
             <nav className="space-y-2">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-80"
               >
                 Home
-              </a>
+              </Link>
               <br/>
-              <a
-                href="/tokenomics"
+              <Link
+                to="/tokenomics"
                 className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-80"
               >
                 Tokenomics
-              </a>
+              </Link>
            
             </nav>
           </div>
