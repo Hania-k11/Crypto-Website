@@ -10,11 +10,12 @@ import visa from '../assets/visa.png';
 import bird from '../assets/bird.png';
 import m from '../assets/m.png';
 import paypal from '../assets/paypal.png';
+import coinbase from '../assets/coinbase.svg';
 
 
 export default function AvailableTK() {
     return (
-      <div id="available" className="min-h-screen -mt-80 md:mt-16 lg:mb-28">
+      <div id="available" className="min-h-screen md:mt-16 lg:mb-28">
         <h1 className="text-center text-[#E2D223] font-jersey10 text-3xl md:text-4xl lg:text-7xl mb-12">
           Available On
         </h1>
@@ -33,6 +34,7 @@ export default function AvailableTK() {
             { icon: <img src={bird} alt="bird" className="w-20 h-22" /> },
             { icon: <img src={m} alt="m" className="w-20 h-22" /> },
             { icon: <img src={paypal} alt="paypal" className="w-28 h-18" /> },
+            { icon: <img src={coinbase} alt="coinbase" className="w-15 h-[4rem]" /> },
           ].map((provider, index) => (
             <div
               key={index}

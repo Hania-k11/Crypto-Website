@@ -1,0 +1,26 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/home",
+        "destination": "/",
+        "permanent": true
+      },
+      {
+        "source": "/tokenomics",
+        "destination": "/tokenomics",
+        "permanent": true
+      },
+      {
+        "source": "/aboutus",
+        "destination": "/aboutus",
+        "permanent": true
+      }
+    ]
+  }
+  

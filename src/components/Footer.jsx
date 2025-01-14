@@ -16,7 +16,7 @@ export default function Footer() {
               className="w-32 h-auto mx-auto md:mx-0 lg:w-48"
             />
             <p className="text-sm md:text-base text-gray-300 max-w-md mx-auto md:mx-0">
-              Your superhero dog on Solana, battling scams and protecting your crypto with hope, humor, and cutting-edge tech. Together, let’s make the crypto world safer and brighter! 🐾✨
+              The superhero dog on Solana, battling scams and protecting your crypto with hope, humor, and cutting-edge tech. Together, let’s make the crypto world safer and brighter! 🐾✨
 
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Footer() {
               <br/>
               <a
                 href="/tokenomics"
-                className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-8"
+                className="text-gray-300 hover:text-yellow-400 text-sm lg:text-base mb-80"
               >
                 Tokenomics
               </a>
@@ -50,10 +50,10 @@ export default function Footer() {
               Say Hello
             </h3>
             <a
-              href="mailto:Enkrypto73@gmail.com"
+              href="mailto:Enkrypted@enkrypto.ai"
               className="block text-gray-300 hover:text-yellow-400 text-sm lg:text-base"
             >
-              Enkrypto73@gmail.com
+              Enkrypted@enkrypto.ai
             </a>
             <img
               src={pig}

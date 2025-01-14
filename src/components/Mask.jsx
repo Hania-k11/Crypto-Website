@@ -38,7 +38,7 @@ export default function Mask() {
         {/* Text Over Image */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <p className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold font-jersey10">
-            I will teach you a
+            Enkrypto will teach you a
           </p>
           <p className="text-yellow-400 text-4xl sm:text-5xl md:text-[17rem] lg:text-[18rem] font-bold font-jersey10">
             lesson
