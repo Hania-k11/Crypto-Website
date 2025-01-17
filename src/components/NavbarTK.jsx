@@ -27,7 +27,7 @@ export default function NavbarTK() {
             to="about-us"
             smooth={true}
             duration={500}
-            className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200 cursor-pointer"
+            className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200 cursor-pointer whitespace-nowrap"
           >
             ABOUT US
           </ScrollLink>
@@ -59,7 +59,7 @@ export default function NavbarTK() {
         </div>
 
         {/* Search Bar */}
-        <div className="relative hidden md:block lg:block lg:mr-8">
+        <div className="relative hidden  lg:block lg:mr-8">
           <input
             type="text"
             placeholder="TYPE HEADER AND HIT ENTER"
@@ -71,87 +71,91 @@ export default function NavbarTK() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div>
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white md:hidden focus:outline-none p-2 rounded-full bg-[#080253] hover:bg-[#0F0775] transition-all duration-300"
-        >
-          {isMenuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="white"
-              className="w-6 h-6"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="white"
-              className="w-6 h-6"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          )}
-        </button>
+     {/* Mobile Menu */}
+<div>
+  <button
+    onClick={() => setIsMenuOpen(!isMenuOpen)}
+    className="text-white md:hidden focus:outline-none p-2 rounded-full bg-[#080253] hover:bg-[#0F0775] transition-transform duration-300"
+  >
+    {isMenuOpen ? (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="2"
+        stroke="white"
+        className="w-6 h-6 transform rotate-180 transition-transform duration-300"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    ) : (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="2"
+        stroke="white"
+        className="w-6 h-6 transform rotate-0 transition-transform duration-300"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    )}
+  </button>
 
-        {isMenuOpen && (
-          <div
-            className="absolute top-0 left-0 right-0 bg-[#080253] w-full text-center py-4 rounded-b-lg shadow-lg z-50"
-            onClick={closeMenuOnScroll}
-          >
-            
+  <div
+    className={`absolute top-full left-0 w-full bg-[#080253] text-center py-4 rounded-b-lg shadow-lg z-50 transition-all duration-500 ease-in-out ${
+      isMenuOpen
+        ? 'opacity-100 translate-y-0 visible'
+        : 'opacity-0 -translate-y-4 invisible'
+    }`}
+  >
+    {/* Menu Items */}
+    <Link
+      to="/"
+      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      HOME
+    </Link>
+    <ScrollLink
+      to="about-us"
+      smooth={true}
+      duration={500}
+      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      ABOUT US
+    </ScrollLink>
+    <ScrollLink
+      to="roadmap"
+      smooth={true}
+      duration={500}
+      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      ROADMAP
+    </ScrollLink>
+    <ScrollLink
+      to="nft"
+      smooth={true}
+      duration={500}
+      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      NFT
+    </ScrollLink>
+    <ScrollLink
+      to="tokenomics"
+      smooth={true}
+      duration={500}
+      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      MEDIA
+    </ScrollLink>
+  </div>
+</div>
 
-            <Link to="/" className="block text-white hover:text-gray-300 mb-2 text-lg font-medium cursor-pointer">
-  HOME
-</Link>
-            <ScrollLink
-              to="about-us"
-              smooth={true}
-              duration={500}
-              className="block text-white hover:text-gray-300 mb-2 text-lg font-medium cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ABOUT US
-            </ScrollLink>
-            
-            <ScrollLink
-              to="roadmap"
-              smooth={true}
-              duration={500}
-              className="block text-white hover:text-gray-300 mb-2 text-lg font-medium cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ROADMAP
-            </ScrollLink>
-            <ScrollLink
-              to="nft"
-              smooth={true}
-              duration={500}
-              className="block text-white hover:text-gray-300 mb-2 text-lg font-medium cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              NFT
-            </ScrollLink>
-            <ScrollLink
-              to="tokenomics"
-              smooth={true}
-              duration={500}
-              className="block text-white hover:text-gray-300 mb-2 text-lg font-medium cursor-pointer"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              MEDIA
-            </ScrollLink>
-          </div>
-        )}
-      </div>
     </nav>
   );
 }

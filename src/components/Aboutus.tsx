@@ -7,7 +7,7 @@ export default function EnkryptoAboutPage() {
 <>
       <Navbar />
 
-   <div className="min-h-screen p-4 md:p-8 lg:p-16 bg-[#110A2F]">
+   <div className="min-h-screen p-4 md:p-8 lg:p-16 ">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center space-y-8">
           {/* About Heading */}

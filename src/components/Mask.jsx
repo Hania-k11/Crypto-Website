@@ -40,7 +40,7 @@ export default function Mask() {
           <p className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[6rem] font-bold font-jersey10">
             Enkrypto will teach you a
           </p>
-          <p className="text-yellow-400 text-4xl sm:text-5xl md:text-[17rem] lg:text-[18rem] font-bold font-jersey10">
+          <p className="text-[#E2D223] text-4xl sm:text-5xl md:text-[17rem] lg:text-[18rem] font-bold font-jersey10">
             lesson
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function Mask() {
       className="typing-container flex items-center justify-center md:justify-start px-4 sm:px-8 md:px-16 w-full mt-1"
     >
       <h1
-        className="typing-text font-bold flex justify-center md:justify-start"
+        className="text-[9rem] md:text-[15rem] lg:text-[16rem] typing-text font-bold flex justify-center md:justify-start"
         style={{
           WebkitTextStroke: "2px #E2D223", // Yellow outline
           color: "transparent", // Transparent text fill
@@ -65,7 +65,7 @@ export default function Mask() {
             className={`letter ${isVisible ? "visible" : ""}`}
             style={{
               animationDelay: `${index * 0.5}s`,
-              fontSize:"16rem"
+             
             }}
           >
             {letter}

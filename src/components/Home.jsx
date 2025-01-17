@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import StepsToBuy from "./StepsToBuy";
 
 
+
 export default function Home() {
   return (
 <>

@@ -10,10 +10,10 @@ export default function BigReleaseSection() {
             <div className="text-white md:-mb-20">
               BIG RELEASE
             </div>
-            <div className="text-yellow-400 self-start md:-mb-10 md:mt-6">
+            <div className="text-[#E2D223] self-start md:-mb-10 md:mt-6">
               FULL
             </div>
-            <div className="text-yellow-400 self-start md:-mb-12">
+            <div className="text-[#E2D223] self-start md:-mb-12">
               EDITION
             </div>
             <div className="text-white mr-11 max-md:mr-2.5 max-md:max-w-full">
