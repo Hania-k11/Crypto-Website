@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Middle Column */}
           <div className="text-center md:text-left">
-            <h3 className="text-yellow-400 text-2xl lg:text-3xl font-bold mb-4 font-jersey10">
+            <h3 className="text-[#E2D223] text-2xl lg:text-3xl font-bold mb-4 font-jersey10">
               Menu
             </h3>
             <nav className="space-y-2">

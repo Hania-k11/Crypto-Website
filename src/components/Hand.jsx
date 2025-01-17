@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import hand from '../assets/hand.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hand() {
   const [isVisible, setIsVisible] = useState(false);
   const handRef = useRef(null); 
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -64,7 +66,7 @@ export default function Hand() {
 
         <div className="flex justify-end pr-16 mt-4 mb-16">
           <button
-            onClick={() => { window.location.href = '/aboutus'; }}
+            onClick={() => { navigate('/aboutus'); }}
             className="bg-[#E2D223] sm:w-28 md:w-44 lg:w-56 text-black font-jersey10 1xl md:2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-red-900 hover:text-[#E2D223] transition duration-300"
           >
             ABOUT US
