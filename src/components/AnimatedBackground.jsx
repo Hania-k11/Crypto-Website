@@ -44,11 +44,11 @@ export default function AnimatedBackground() {
         {/* Content Section */}
         <div className="flex flex-col-reverse md:flex-row justify-between items-center pr-3">
           {/* Image on the left */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end px-4 md:px-0 z-20">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2 flex justify-center md:justify-end px-4 md:px-0 z-20">
             <img
               src={gold}
               alt="Gold"
-              className="w-3/4 md:w-full h-auto object-contain animate-pulse"
+              className="lg:w-3/4 md:w-full h-auto object-contain animate-pulse"
             />
           </div>
 
