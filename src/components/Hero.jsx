@@ -41,7 +41,7 @@ export default function Hero() {
   <img 
     src={logo} 
     alt="Logo" 
-    className="max-w-full h-full object-contain  hover:animate-shake"
+    className="hidden lg:block max-w-full h-full object-contain"
   />
 </div>
 

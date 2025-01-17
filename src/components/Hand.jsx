@@ -29,9 +29,13 @@ export default function Hand() {
   }, []);
 
   return (
-    <div id="about-us" className="flex justify-between" ref={handRef}>
+    <div
+      id="about-us"
+      className="flex justify-between overflow-x-hidden"
+      ref={handRef}
+    >
       <div
-        className={`justify-end -ml-18 w-1/2 transition-transform duration-1000 ease-out ${
+        className={`justify-end ml-2 md:-ml-18 w-full sm:w-1/2 transition-transform duration-1000 ease-out ${
           isVisible ? 'translate-y-0 opacity-100' : '-translate-y-48 opacity-0'
         }`}
       >
@@ -42,11 +46,11 @@ export default function Hand() {
         />
       </div>
 
-      <div className="w-1/2 flex flex-col justify-center pr-4">
-        <div className="z-10 pl-8 text-right">
-          <h1 className="text-4xl md:text-5xl lg:text-8xl space-y-4 font-jersey10 pr-16">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center sm:-mr-6 md:pr-4">
+        <div className="z-10 pl-0 md:pl-8 text-right">
+          <h1 className="text-2xl md:text-5xl lg:text-7xl md:space-y-4 font-jersey10 pr-16">
             <div className="flex flex-col">
-              <span className="pb-4">
+              <span className="md:pb-4">
                 <span className="text-white">Your </span>
                 <span className="text-[#E2D223]">Superhero </span>
                 <span className="text-[#E2D223]">Dog </span>
@@ -58,10 +62,10 @@ export default function Hand() {
           </h1>
         </div>
 
-        <div className="flex justify-end pr-16 mt-4">
+        <div className="flex justify-end pr-16 mt-4 mb-16">
           <button
             onClick={() => { window.location.href = '/aboutus'; }}
-            className="bg-[#E2D223] w-44 lg:w-56 text-black font-jersey10 2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-red-900 text-[#880F11] hover:text-[#E2D223] transition duration-300"
+            className="bg-[#E2D223] sm:w-28 md:w-44 lg:w-56 text-black font-jersey10 1xl md:2xl lg:text-4xl px-6 py-2 rounded-lg shadow-md hover:bg-red-900 hover:text-[#E2D223] transition duration-300"
           >
             ABOUT US
           </button>

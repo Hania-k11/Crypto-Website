@@ -12,7 +12,7 @@ export default function EnkryptoAbout() {
             <h1 className="font-mono text-center lg:text-left text-4xl md:text-6xl lg:text-9xl">
               <span className="text-white font-jersey10">ABOUT</span>
               <br />
-              <span className="text-yellow-400 font-jersey10">ENKRYPTO</span>
+              <span className="text-[#E2D223] font-jersey10">ENKRYPTO</span>
             </h1>
           </div>
 

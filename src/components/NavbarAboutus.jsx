@@ -25,7 +25,7 @@ export default function Navbar() {
 </Link>
          
 <Link to="/" className="text-lg py-16 px-3 font-jockey hover:bg-[#0F0775] transition-colors duration-200">
-  Tokenomics
+  TOKENOMICS
 </Link>
 
         </div>
