@@ -47,7 +47,7 @@ export default function Merch() {
         {/* Left Section: Image */}
         <div className="w-full md:w-[38rem] mt-12 md:mt-0">
           <img
-            src={merchdog}
+            src={merchsuper}
             alt="Merchandise"
             className="w-full h-auto object-cover "
             style={{ maxWidth: "100%" }}
