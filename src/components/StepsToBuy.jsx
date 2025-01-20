@@ -34,7 +34,7 @@ export default function StepsToBuy() {
 
   return (
     <div className="w-full min-h-[50vh] ">
-      <h1 className="text-center lg:text-9xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
+      <h1 className="text-center md:text-5xl lg:text-9xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
         STEPS TO BUY
       </h1>
       <div className="flex items-center justify-center w-full overflow-hidden">
