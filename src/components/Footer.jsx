@@ -84,31 +84,31 @@ export default function Footer() {
               Follow us on:
             </span>
             <div className="border border-white rounded-lg p-3 flex flex-wrap justify-center sm:justify-start space-x-4">
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.coingecko.com/en/coins/enkrypto" className="hover:text-white transition-opacity">
                 <LuWallet className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://discord.com/invite/hdmccc66" className="hover:text-white transition-opacity">
                 <FaDiscord className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.reddit.com/r/EnKrypted_solcoin" className="hover:text-white transition-opacity">
                 <FaReddit className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.tiktok.com/@enkrypt0" className="hover:text-white transition-opacity">
                 <FaTiktok className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://t.me/+EMy0uRgYOixiNDhh" className="hover:text-white transition-opacity">
                 <FaTelegram className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.youtube.com/@OfficialEnKrypto" className="hover:text-white transition-opacity">
                 <FaYoutube className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.facebook.com/people/EnKrypto-Krypt/" className="hover:text-white transition-opacity">
                 <FaFacebook className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://x.com/krypto_en" className="hover:text-white transition-opacity">
                 <FaTwitter className="text-sm sm:text-base lg:text-3xl" />
               </a>
-              <a href="#" className="hover:text-white transition-opacity">
+              <a href="https://www.instagram.com/enkrypto_" className="hover:text-white transition-opacity">
                 <FaInstagram className="text-sm sm:text-base lg:text-3xl" />
               </a>
             </div>

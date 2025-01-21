@@ -50,7 +50,12 @@ export default function Navbar() {
           >
             COMICS
           </ScrollLink>
-          
+          <Link to="/media" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  VIDEO
+</Link>
+<Link to="/nft" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  NFT
+</Link>
           
         </div>
 

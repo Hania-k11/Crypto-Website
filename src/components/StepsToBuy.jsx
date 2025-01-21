@@ -1,8 +1,8 @@
-import { useRef, useEffect } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { useRef, useEffect } from "react";
+import { ChevronRight } from "lucide-react";
 
 const Box = ({ number, title, content }) => (
-  <div className="flex-shrink-0 w-72 h-72  m-4 text-white text-lg font-semibold rounded-xl p-6 flex flex-col items-center justify-center text-center border-2 border-[#E2D223]">
+  <div className="flex-shrink-0 w-72 h-72 m-4 text-white text-lg font-semibold rounded-xl p-6 flex flex-col items-center justify-center text-center border-2 border-[#E2D223]">
     <h3 className="text-[#E2D223] text-xl font-bold mb-2">{title}</h3>
     <p className="text-white text-sm mb-4">STEP {number}</p>
     <p className="text-gray-400">{content}</p>
@@ -15,10 +15,26 @@ const Arrow = () => (
 
 export default function StepsToBuy() {
   const stepsData = [
-    { number: 1, title: 'Download Phantom Wallet', content: 'Download and install the Phantom Wallet from the App Store or as a browser extension.' },
-    { number: 2, title: 'Buy SOL', content: 'Purchase $SOL from an exchange or bridge $SOL to your Phantom wallet.' },
-    { number: 3, title: 'Swap for $KRYPT', content: 'Visit Raydium or another DEX and paste the $KRYPT contract address to swap $SOL for $KRYPT.' },
-    { number: 4, title: 'Add $KRYPT to Wallet', content: 'Add the $KRYPT contract address to Phantom Wallet to view your tokens.' },
+    {
+      number: 1,
+      title: "Download Phantom Wallet",
+      content: "Download and install the Phantom Wallet from the App Store or as a browser extension.",
+    },
+    {
+      number: 2,
+      title: "Buy SOL",
+      content: "Purchase $SOL from an exchange or bridge $SOL to your Phantom wallet.",
+    },
+    {
+      number: 3,
+      title: "Swap for $KRYPT",
+      content: "Visit Raydium or another DEX and paste the $KRYPT contract address to swap $SOL for $KRYPT.",
+    },
+    {
+      number: 4,
+      title: "Add $KRYPT to Wallet",
+      content: "Add the $KRYPT contract address to Phantom Wallet to view your tokens.",
+    },
   ];
 
   const boxesAndArrows = stepsData.flatMap((step, index) => [
@@ -32,21 +48,25 @@ export default function StepsToBuy() {
     const slider = sliderRef.current;
     let scrollAmount = 0;
 
-    // Clone the content for seamless infinite scroll
-    const sliderItems = slider.children[0];
-    const clone = sliderItems.cloneNode(true);
-    slider.appendChild(clone);
+    // Defer cloning logic until the DOM is fully rendered
+    setTimeout(() => {
+      const sliderItems = slider.children[0];
+      if (!sliderItems) return;
 
-    const scrollSlider = () => {
-      scrollAmount += 2; // Adjust this value for scroll speed
-      if (scrollAmount >= sliderItems.scrollWidth) {
-        scrollAmount = 0; // Reset scroll to the start
-      }
-      slider.scrollLeft = scrollAmount;
-    };
+      const clone = sliderItems.cloneNode(true);
+      slider.appendChild(clone);
 
-    const interval = setInterval(scrollSlider, 16); // Smooth animation
-    return () => clearInterval(interval);
+      const scrollSlider = () => {
+        scrollAmount += 2; // Adjust for scroll speed
+        if (scrollAmount >= sliderItems.scrollWidth) {
+          scrollAmount = 0; // Reset to start
+        }
+        slider.scrollLeft = scrollAmount;
+      };
+
+      const interval = setInterval(scrollSlider, 16); // Smooth animation
+      return () => clearInterval(interval);
+    }, 0);
   }, []);
 
   return (
@@ -58,9 +78,7 @@ export default function StepsToBuy() {
         ref={sliderRef}
         className="flex items-center w-full overflow-hidden relative font-jockey"
       >
-        <div className="flex">
-          {boxesAndArrows}
-        </div>
+        <div className="flex">{boxesAndArrows}</div>
       </div>
     </div>
   );

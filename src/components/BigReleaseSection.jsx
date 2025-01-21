@@ -33,7 +33,7 @@ export default function BigReleaseSection() {
 
       {/* Centered button with auto width based on text */}
       <div className="flex justify-center mt-8">
-        <button className="inline-flex items-center justify-center rounded-lg bg-[#E2D223] text-black font-jersey10 md:text-3xl cursor-pointer py-2 px-5">
+        <button className="inline-flex items-center justify-center rounded-lg bg-[#E2D223] text-black font-jersey10 md:text-3xl cursor-pointer py-2 px-5" onClick={() => window.open("https://enkrypto.io/wp-content/uploads/2024/10/Enkrypto-Comics-v1.pdf", "_blank")}>
           Click to open the Enkrypto Comics in your Web Browser
         </button>
       </div>

@@ -4,6 +4,8 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Tokenomics from './components/Tokenomics';
 import EnkryptoAboutPage from './components/Aboutus';
+import NFT from './components/NFT';
+import MEDIA from './components/Media';
 
 export default function App() {
   return (
@@ -24,6 +26,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tokenomics" element={<Tokenomics />} />
         <Route path="/aboutus" element={<EnkryptoAboutPage />} />
+        <Route path="/nft" element={<NFT />} />
+        <Route path="/media" element={<MEDIA />} />
         </Routes>
       </div>
     </div>

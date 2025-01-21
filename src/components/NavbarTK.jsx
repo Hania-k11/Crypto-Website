@@ -23,14 +23,7 @@ export default function NavbarTK() {
         <Link to="/" className="text-lg py-16 px-3 font-jockey hover:bg-[#0F0775] transition-colors duration-200">
   HOME
 </Link>
-          <ScrollLink
-            to="about-us"
-            smooth={true}
-            duration={500}
-            className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200 cursor-pointer whitespace-nowrap"
-          >
-            ABOUT US
-          </ScrollLink>
+      
           <ScrollLink
             to="roadmap"
             smooth={true}
@@ -39,22 +32,12 @@ export default function NavbarTK() {
           >
             ROADMAP
           </ScrollLink>
-          <ScrollLink
-            to="available"
-            smooth={true}
-            duration={500}
-            className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200 cursor-pointer"
-          >
-            NFT
-          </ScrollLink>
-          <ScrollLink
-            to="tokenomics"
-            smooth={true}
-            duration={500}
-            className="text-lg font-jockey py-16 px-3 hover:bg-[#0F0775] transition-colors duration-200 cursor-pointer"
-          >
-            MEDIA
-          </ScrollLink>
+          <Link to="/media" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  MEDIA
+</Link>
+<Link to="/nft" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  NFT
+</Link>
           
         </div>
 
@@ -135,24 +118,12 @@ export default function NavbarTK() {
     >
       ROADMAP
     </ScrollLink>
-    <ScrollLink
-      to="nft"
-      smooth={true}
-      duration={500}
-      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
-      onClick={() => setIsMenuOpen(false)}
-    >
-      NFT
-    </ScrollLink>
-    <ScrollLink
-      to="tokenomics"
-      smooth={true}
-      duration={500}
-      className="block text-white hover:text-gray-300 mb-4 text-lg font-medium cursor-pointer transition duration-300"
-      onClick={() => setIsMenuOpen(false)}
-    >
-      MEDIA
-    </ScrollLink>
+    <Link to="/media" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  VIDEO
+</Link>
+<Link to="/nft" className="text-lg font-jockey py-16 px-1 hover:bg-[#0F0775] transition-colors duration-200">
+  NFT
+</Link>
   </div>
 </div>
 
