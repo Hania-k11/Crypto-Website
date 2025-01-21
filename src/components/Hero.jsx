@@ -22,7 +22,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-7xl space-y-4 font-jersey10">
             <div className="flex flex-col">
               <span className="pb-4">
-                <span className="text-white">Your </span>
+                <span className="text-white">The </span>
                 <span className="text-[#E2D223]">Superhero </span>
                 <span className="text-[#E2D223]">Dog</span>
               </span>

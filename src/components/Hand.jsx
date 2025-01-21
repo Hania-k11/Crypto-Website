@@ -53,7 +53,7 @@ export default function Hand() {
           <h1 className="text-2xl md:text-5xl lg:text-7xl md:space-y-4 font-jersey10 pr-16">
             <div className="flex flex-col">
               <span className="md:pb-4">
-                <span className="text-white">Your </span>
+                <span className="text-white">The </span>
                 <span className="text-[#E2D223]">Superhero </span>
                 <span className="text-[#E2D223]">Dog </span>
                 <span className="text-white">That Will </span>

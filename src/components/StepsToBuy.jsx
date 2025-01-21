@@ -1,55 +1,64 @@
-import React from 'react';
+import { useRef, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const Box = ({ number, title, content }) => (
-  <div
-    className="flex-shrink-0 w-72 h-72 bg-blue-950 bg-opacity-15 m-6 text-white text-4xl font-bold rounded-3xl p-8 border-4 border-[#E2D223] flex flex-col items-center justify-center text-center"
-    
-  >
-    <h3 className="text-white text-2xl font-semibold mb-4">{title}</h3>
-    <p className="text-gray-300 text-xl mb-2">STEP {number}</p>
-    <p className="text-gray-300 text-lg">{content}</p>
+  <div className="flex-shrink-0 w-72 h-72  m-4 text-white text-lg font-semibold rounded-xl p-6 flex flex-col items-center justify-center text-center border-2 border-[#E2D223]">
+    <h3 className="text-[#E2D223] text-xl font-bold mb-2">{title}</h3>
+    <p className="text-white text-sm mb-4">STEP {number}</p>
+    <p className="text-gray-400">{content}</p>
   </div>
 );
 
 const Arrow = () => (
-  <ChevronRight className="w-16 h-16 text-red-600 self-center flex-shrink-0" />
+  <ChevronRight className="w-12 h-12 text-[#E2D223] self-center flex-shrink-0" />
 );
 
 export default function StepsToBuy() {
   const stepsData = [
-    { number: 1, title: 'Download Phontom ', content: 'Download and install the Phantom Wallet either from the app store on your phone or as a browser extension for desktop.' },
-    { number: 2, title: 'Buy some Solana', content: 'Purchase $SOL from an exchange or bridge $SOL and send it to your Phantom wallet' },
-    { number: 3, title: 'Buy $KRYPT', content: 'Go to Decentralized Exchanges (DEXs) : Raydium, and paste the $KRYPT contract address listed on this website to swap your SOL for MA' },
-    { number: 4, title: 'Add $KRYPT to Your Wallet', content: 'Add $KRYPT contract address to your Phantom Wallet for your $KRYPT tokens to show. Lets get SUPER!' },
+    { number: 1, title: 'Download Phantom Wallet', content: 'Download and install the Phantom Wallet from the App Store or as a browser extension.' },
+    { number: 2, title: 'Buy SOL', content: 'Purchase $SOL from an exchange or bridge $SOL to your Phantom wallet.' },
+    { number: 3, title: 'Swap for $KRYPT', content: 'Visit Raydium or another DEX and paste the $KRYPT contract address to swap $SOL for $KRYPT.' },
+    { number: 4, title: 'Add $KRYPT to Wallet', content: 'Add the $KRYPT contract address to Phantom Wallet to view your tokens.' },
   ];
 
-  // Add an arrow after each box
-  const boxesAndArrows = stepsData.map((step) => (
-    <React.Fragment key={`step-${step.number}`}>
-      <Box {...step} />
-      <Arrow />
-    </React.Fragment>
-  ));
+  const boxesAndArrows = stepsData.flatMap((step, index) => [
+    <Box key={`box-${index}`} {...step} />,
+    <Arrow key={`arrow-${index}`} />,
+  ]);
+
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let scrollAmount = 0;
+
+    // Clone the content for seamless infinite scroll
+    const sliderItems = slider.children[0];
+    const clone = sliderItems.cloneNode(true);
+    slider.appendChild(clone);
+
+    const scrollSlider = () => {
+      scrollAmount += 2; // Adjust this value for scroll speed
+      if (scrollAmount >= sliderItems.scrollWidth) {
+        scrollAmount = 0; // Reset scroll to the start
+      }
+      slider.scrollLeft = scrollAmount;
+    };
+
+    const interval = setInterval(scrollSlider, 16); // Smooth animation
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="w-full min-h-[50vh] ">
-      <h1 className="text-center md:text-5xl lg:text-9xl font-bold font-jersey10 text-[#E2D223] mb-12 my-8">
+    <div className="w-full min-h-[50vh] p-8">
+      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-[#E2D223] mb-12 font-jockey">
         STEPS TO BUY
       </h1>
-      <div className="flex items-center justify-center w-full overflow-hidden">
-        <style jsx>{`
-          @keyframes moveHorizontally {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-30%);
-            }
-          }
-        `}</style>
-        <div className="flex animate-[moveHorizontally_16s_linear_infinite] font-jockey">
-          {boxesAndArrows}
+      <div
+        ref={sliderRef}
+        className="flex items-center w-full overflow-hidden relative font-jockey"
+      >
+        <div className="flex">
           {boxesAndArrows}
         </div>
       </div>
